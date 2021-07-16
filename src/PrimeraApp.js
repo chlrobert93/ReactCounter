@@ -2,7 +2,7 @@ import React from 'react';
 //import React, {Fragment} from 'react';
 //FC
 
-const PrimeraApp = ({saludo2= 'Hola Soy Naruto'}) => {
+const PrimeraApp = ({saludo2= 'Hola Soy Naruto', subtitulo= 'Soy un robot'}) => {
 
  //const holaMundo = "Hola Mundo"
 
@@ -17,6 +17,7 @@ const PrimeraApp = ({saludo2= 'Hola Soy Naruto'}) => {
        
        <div>
            <h1>{saludo2}</h1>
+           <h1>{subtitulo}</h1>
           <h1>{JSON.stringify(saludo)}</h1>
           <pre>{JSON.stringify(saludo)}</pre>
           <pre>{JSON.stringify(saludo, null, 3)}</pre>
@@ -25,6 +26,12 @@ const PrimeraApp = ({saludo2= 'Hola Soy Naruto'}) => {
        </div>
     
     );
+}
+
+
+
+PrimeraApp.defaultProps = {
+    subtitulo: 'Soy un subtitoulo'
 }
 
 export default PrimeraApp;
