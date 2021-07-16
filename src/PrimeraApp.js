@@ -2,11 +2,11 @@ import React from 'react';
 //import React, {Fragment} from 'react';
 //FC
 
-const primeraApp = (props) => {
+const PrimeraApp = ({saludo2= 'Hola Soy Naruto'}) => {
 
-    const holaMundo = "Hola Mundo"
+ //const holaMundo = "Hola Mundo"
 
-    console.log(props);
+   // console.log(props);
 
     const saludo = {
         nombre: 'Fernando',
@@ -16,7 +16,7 @@ const primeraApp = (props) => {
     return (
        
        <div>
-           <h1>{props.saludo}</h1>
+           <h1>{saludo2}</h1>
           <h1>{JSON.stringify(saludo)}</h1>
           <pre>{JSON.stringify(saludo)}</pre>
           <pre>{JSON.stringify(saludo, null, 3)}</pre>
@@ -27,4 +27,4 @@ const primeraApp = (props) => {
     );
 }
 
-export default primeraApp;
+export default PrimeraApp;
