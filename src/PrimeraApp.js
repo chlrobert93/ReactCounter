@@ -4,12 +4,23 @@ import React from 'react';
 
 const primeraApp = () => {
 
+    const holaMundo = "Hola Mundo"
+
+    const saludo = {
+        nombre: 'Fernando',
+        edad:34
+    }
+
     return (
        
-       <>
-          <h1>Hola Mundo</h1>
+       <div>
+           <h1>{holaMundo}</h1>
+          <h1>{JSON.stringify(saludo)}</h1>
+          <pre>{JSON.stringify(saludo)}</pre>
+          <pre>{JSON.stringify(saludo, null, 3)}</pre>
+
           <p>Mi priemra aplicación</p>
-       </>
+       </div>
     
     );
 }
